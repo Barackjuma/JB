@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Next Level Salon & Barber</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-circle">NL</div>
+        <div>
+          <p class="eyebrow">Next Level</p>
+          <h1>Salon & Barber</h1>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Ready for your next level look?</h2>
+          <p>Book an appointment, ask about services, or drop by to meet the team.</p>
+          <div class="contact-details">
+            <div>
+              <strong>Location</strong>
+              <p>Oyugis, Kenya</p>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon - Sat: 9am - 7pm</p>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <p>+254 748 013 416</p>
+            </div>
+          </div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.976306018334!2d34.7061033!3d-0.5832265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178006f4d2cb7bfb%3A0x3aaa2f1b1fa5ac66!2sOyugis%2C%20Kenya!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+              width="100%"
+              height="260"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <form class="contact-form" id="booking-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="Men's Cut & Style">Men's Cut & Style</option>
+            <option value="Women's Styling">Women's Styling</option>
+            <option value="Beard Care">Beard Care</option>
+            <option value="Color & Treatment">Color & Treatment</option>
+          </select>
+
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required />
+
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <p class="form-notice" id="form-notice"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Next Level Salon & Barber. Crafted for style and confidence.</p>
+      <p>Follow us on social media for latest looks.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
